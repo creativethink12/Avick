@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Avickz XPhotography</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            color: aliceblue;
+        }
+        .zoom-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .zoom-container img {
+      transition: transform 0.3s ease; /* Smooth transition */
+      width: 100%;
+      height: auto;
+    }
+
+    .zoom-container:hover img {
+      transform: scale(1.2); /* Zooms the image by 20% on hover */
+    }
+    </style>
+</head>
+<body>
+    <special-header></special-header>
+
+    <special-navbar></special-navbar>
+
+    <div>
+        <section class="about-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 zoom-container">
+                        <img class="img-fluid " src="image/gallery1.png" alt="Your Photo" >
+                    </div>
+                    <div class="col-md-6">
+                        <h2>About Me</h2>
+                        <p>
+                            Hi, I'm Avick, a passionate photographer with 15 years of experience. 
+                            I love capturing moments and turning them into timeless memories. 
+                            My work focuses on [ portrait, landscape, wedding].
+                        </p>
+                        <p>
+                            I'm inspired by [nature, people, culture]. 
+                            My goal is to create images that evoke emotions and tell stories.
+                        </p>
+                        <p>
+                            When I'm not behind the camera, I enjoy [traveling, painting, hiking].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <special-footer></special-footer>
+      
+    <!-- java script link-->
+     <script src="script.js"></script>
+    <script src="contentmanager.js"></script>
+</body>
+</html>
